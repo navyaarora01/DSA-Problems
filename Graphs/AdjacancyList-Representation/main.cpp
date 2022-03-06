@@ -28,7 +28,7 @@ void Node :: display(){
 }
 int main(){
     int v , v1 , j;
-    cout<<"Enter number if vertices: ";
+    cout<<"Enter number of vertices: ";
     cin>>v;
     Node graph[v];             //Array of vertices
     for(int i=0;i<v;i++){
@@ -44,4 +44,4 @@ int main(){
     for(int i=0;i<v;i++){
         graph[i].display();
     }
-}    
+}   

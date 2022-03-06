@@ -10,6 +10,18 @@ struct Node
     next = NULL;
   }
 };
+Node *insert(Node * head, int x){
+   Node *temp = new Node(x);
+   if(head == NULL){
+   return temp;
+   }
+   Node *curr = head;
+   while (curr->next!= NULL){
+       curr = curr->next;
+   }  
+   curr->next = temp;
+   return head;
+}
 
 void printList(Node *head)
 {
@@ -24,12 +36,12 @@ int main(){
     int v , v1 , j;
     cout<<"Enter number if vertices: ";
     cin>>v;
-    int graph[v];             //Array of vertices
+    Node *graph[v];             //Array of vertices
     for(int i=0;i<v;i++){
         cout<<"Enter the vertices adjacent to vertex "<<i<<": ";
         cin>>v1; 
-        // graph[i].insert(v1);
-        Node *head = new Node(graph[i]);
+        graph[i]=insert(graph[i] , v1);
+        // Node *head = new Node(graph[i]);
         cout<<"Is there any other vertex adjacent to vertex "<<i<<"?-(1-yes and 0-No): ";
         cin>> j;
         if(j){
