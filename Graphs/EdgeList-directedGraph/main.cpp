@@ -55,6 +55,10 @@ int main()
 //     for(int i=0;i<V;i++){
 //         cout<<"Enter the vertex adjacent to vertex "<<i<<": ";
 //         cin>>a; 
+//          if(a == -1){
+//               i++;
+//               break ;
+//           }
 //         addEdge(adj ,i,a);
 //         cout<<"Is there any other vertex adjacent to vertex "<<i<<"?-(1-yes and 0-No): ";
 //         cin>> j;
