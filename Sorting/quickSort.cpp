@@ -21,11 +21,6 @@ void quickSort(int arr[] , int s , int e){
         quickSort(arr , pivot+1, e);
        
     }
-    for(int i=s;i<e+1;i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
-    
 }
 
 int main(){
@@ -41,5 +36,7 @@ int main(){
     s = 0;
     e = n-1;
     quickSort(arr , s , e);
-    
+    for(int i=s;i<e+1;i++){
+        cout<<arr[i]<<" ";
+    }
 }

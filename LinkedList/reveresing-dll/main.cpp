@@ -14,15 +14,15 @@ Node *reverseDLL(Node *head){
     if(head == NULL || head->next==NULL){
         return head;
     }
-    Node *prev = NULL ;
+    Node *temp = NULL ;
     Node *curr = head;
     while(curr!=NULL){
-        prev = curr->prev;
+        temp = curr->prev;
         curr->prev = curr->next;
-        curr->next =prev;
+        curr->next =temp;
         curr=curr->prev;   // curr=curr->next(triversing case)
     }
-    return prev->prev; //here prev = 20; and next= null ; so we will write prev->prev ie 30 which is new head
+    return temp->prev; 
 }
 void printList(Node *head){
     Node *curr = head;
@@ -44,6 +44,4 @@ int main(){
     printList(head);
     return 0;
 }
-
-
 
