@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 int partition(int arr[] , int s , int e){
+    int pivot  = arr[e];   // last element is taken as pivot
     int i =s-1;
     for(int j=s ; j<e ; j++){
-        if(arr[j]<arr[e]){
+        if(arr[j]<pivot){
             i++;
             swap(arr[i] , arr[j]);
 
         }
     }
-    swap(arr[i+1] , arr[e]);
+    swap(arr[i+1] ,arr[e]);
     return (i+1);
     
 }

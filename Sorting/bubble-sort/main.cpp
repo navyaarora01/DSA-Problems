@@ -21,6 +21,7 @@ for(int i=0;i<n;i++){
     cout<< arr[i]<<" ";
 }
 cout<<endl;
+int count = 0;
 int iteration =1;
 while(iteration<n){   /* as there will be n-1 iterations for evry n  elements of  arrays*/
 for(int i=0;i<n-iteration;i++){ /*we will go to n-iteration times till we reach the last array element to be sorted through out the array */
@@ -28,6 +29,7 @@ for(int i=0;i<n-iteration;i++){ /*we will go to n-iteration times till we reach 
       int temp=arr[i];
       arr[i]=arr[i+1];
       arr[i+1]= temp;
+      count++;
   }
    
 }
@@ -38,6 +40,7 @@ cout<<"sorted array is :"<<endl;
 for(int i=0;i<n;i++){
     cout<< arr[i]<<" ";
 }
+cout<<"count = "<<count;
 return 0;
 }
 //tc == n*(n-i)/2
