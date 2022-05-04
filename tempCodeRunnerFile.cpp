@@ -1,67 +1,25 @@
-#include<iostream>
- using namespace std;
- int merge(int arr[],int s,int m, int e)
- {
-     int b[e-s+1];
-     int i=s,j=m+1,k=0;
-     while(i<=m && j<=e)
-     {
-         if(arr[i]<arr[j])
-         {
-             b[k]=arr[i];
-             i++;
-             k++;
-         }
-         else
-         {
-             b[k]=arr[j];
-             j++;
-             k++;
-         }
-     }
-         while(i<=m)
-         {
-             b[k]=arr[i];
-             i++;
-             k++;
-         }
-         while(j<=e)
-         {
-             b[k]=arr[j];
-             j++;
-             k++;
-         }
-         for(int l=s;l<=e;l++)
-         {
-             arr[l]=b[l-s];
-         }
-     }
- int mergesort(int arr[],int s,int e)
- {
-     if(e>s)
-     {
-         int m=(s+e)/2;
-         mergesort(arr,s,m);
-         mergesort(arr,m+1,e);
-         merge(arr,s,m,e);
-     }
- }
+#include <bits/stdc++.h>
+#include <algorithm>
+using namespace std;
+int main() {
 
- int main()
- {
-     int n;
-     cin>>n;
-     int arr[n];
-     for(int i=0;i<n;i++)
-     {
-         cin>>arr[i];
-     }
-     int s,e;
-     s=0;
-     e=n-1;
-     mergesort(arr,s,e);
-     for(int i=0;i<n;i++)
-     {
-         cout<<" "<<arr[i];
-     }
- }
+    int arr[8];
+    for(int i=0;i<8;i++){
+        cin>>arr[i];
+    }
+    int maxn = 0;
+    int sum;
+    int s=0;
+    int e =3;
+    while(s<=3 && e<=7){
+        sum = 0;
+        for(int i=s;i<=e;i++){
+            sum = sum +arr[i];
+        } 
+        maxn = max(sum , maxn);
+        s++;
+        e++;
+    }
+    cout<<maxn<<endl;
+	// Write your code here
+}

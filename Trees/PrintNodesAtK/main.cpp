@@ -31,7 +31,7 @@ int main()
     root -> right->left = new Node(45);
     root -> right->right= new Node(80);
     root -> right->right->left= new Node(88);
-    nodeAtK(root , 0);
+    nodeAtK(root , 2);
 
     return 0;
 }

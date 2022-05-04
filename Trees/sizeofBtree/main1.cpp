@@ -26,6 +26,7 @@ int main()
     root -> right->left = new Node(45);
     root -> right->right= new Node(80);
     root -> right->right->left= new Node(88);
+    root -> right->right->right= new Node(84);
     int size = getSize(root);
     cout<<size<<endl;
     return 0;
