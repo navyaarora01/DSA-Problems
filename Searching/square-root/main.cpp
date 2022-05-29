@@ -21,7 +21,7 @@ int sqrRoot(int n){
         }
         
     }
-    return ans;
+    return ans; 
 }
 int main(){
     int n;

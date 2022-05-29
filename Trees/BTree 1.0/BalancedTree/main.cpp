@@ -1,3 +1,5 @@
+//  A tree is said to be balancd if and only if the difference
+// between the left and the right branch of a tree is 1 or they are equal
 #include<iostream>
 using namespace std;
 struct Node{
@@ -12,7 +14,7 @@ struct Node{
 
 int height(Node *root){
     if(root == NULL){
-        return true;
+        return 0;
     }
     return max(height(root->left),height(root->right))+1;
 }

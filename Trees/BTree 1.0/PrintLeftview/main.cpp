@@ -22,7 +22,7 @@ void printLeftNode(Node *root){
   for(int i=0;i<count;i++){
         Node *curr = q.front();
         q.pop();
-    //    if(i==count-1){                //for left view
+    //    if(i==count-1){                //for right view
        if(i==0){
            cout<<(curr->key)<<" ";
        }

@@ -64,7 +64,7 @@ int main()
     root -> left -> right = new Node(40);   
     root -> right -> left = new Node(70);   
     root -> right -> right = new Node(100); 
-    root =  insertI(root , 48); 
+    // root =  insertI(root , 48); 
     root = insertR(root , 190); 
     inorder(root); 
     return 0;

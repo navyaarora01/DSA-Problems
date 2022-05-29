@@ -1,3 +1,4 @@
+// sum of the node is equal to sum of left node and sum of right node
 #include <iostream>
 using namespace std;
 struct Node

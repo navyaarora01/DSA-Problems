@@ -10,7 +10,7 @@ using namespace std;
 //     else{
 //         return false;
 //     }
-// }
+// }  
 //using left shift operator (second method)
 bool kthbit( int n, int k){
    if( n & (1 << (k-1)) )

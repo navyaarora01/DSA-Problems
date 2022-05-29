@@ -2,7 +2,7 @@
 #include <iostream>
 #include <climits>
 using namespace std;
-/* Time complexity = O(n)
+/* Time complexity = O(logn)
    Auxilary Space = O(1)     Noe extra spce is required
    As recursive call require extra log n space so iterative solution is better than recursive one
 */

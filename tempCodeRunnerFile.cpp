@@ -1,25 +1,22 @@
-#include <bits/stdc++.h>
-#include <algorithm>
+#include <iostream>
+#include <queue>
 using namespace std;
-int main() {
-
-    int arr[8];
-    for(int i=0;i<8;i++){
-        cin>>arr[i];
+void showPriorityQueue(priority_queue <int> q){
+    while(!q.empty()){
+        cout<<q.top()<<endl;
+        q.pop();
     }
-    int maxn = 0;
-    int sum;
-    int s=0;
-    int e =3;
-    while(s<=3 && e<=7){
-        sum = 0;
-        for(int i=s;i<=e;i++){
-            sum = sum +arr[i];
-        } 
-        maxn = max(sum , maxn);
-        s++;
-        e++;
-    }
-    cout<<maxn<<endl;
-	// Write your code here
+}
+int main(){
+    priority_queue <int> q;
+    q.push(20);
+    q.push(50);
+    q.push(30);
+    q.push(80);
+    q.push(10);
+    q.push(5);
+    
+    cout<<q.size()<<endl;
+    cout<<q.empty()<<endl;
+    showPriorityQueue(q);
 }
