@@ -10,6 +10,9 @@ struct Node{
     }
 };
 Node *deleteAtFirst(Node *head){
+    // if(head == NULL){
+    //     return NULL;
+    // }
     if(head == NULL){
         return NULL;
     }
