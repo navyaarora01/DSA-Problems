@@ -7,7 +7,8 @@ int togglebit(int n, int k)
 }
 int main()
 {
-int n,k;
+int n;
+int k;
     cin >> n >> k;
     cout << togglebit(n, k) << endl;
 }
