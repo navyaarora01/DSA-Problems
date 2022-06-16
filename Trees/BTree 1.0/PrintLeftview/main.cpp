@@ -43,6 +43,7 @@ int main()
     root->left->left = new Node(55); 
     root->left->right = new Node(87); 
     root->left->left->right = new Node(990); 
+    root->left->left->left = new Node(99); 
     root->right = new Node(56); 
     root->right->left = new Node(90); 
     root->right->left-> right = new Node(100); 

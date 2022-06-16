@@ -22,7 +22,7 @@ int isBalanced(Node *root){
     if(rght ==-1){
         return -1;
     }
-    if(lft-rght>1){
+    if(abs(lft-rght)>1){
         return -1;
     }
     return max(lft,rght)+1;
@@ -35,6 +35,7 @@ int main()
     root->right->left = new Node(6);
     root->right->right = new Node(18);
     root->right->right->right = new Node(138);
+    root->right->right->right->right = new Node(13);
     // root->left->left= new Node(16);
     // root->left->right = new Node(10);
    cout<<isBalanced(root)<<endl;
