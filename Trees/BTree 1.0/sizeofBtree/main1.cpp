@@ -16,8 +16,7 @@ int getSize(Node *root){
     }
     return(1+getSize(root->left)+getSize(root->right));
 }
-int main()
-{
+int main(){
     Node *root = new Node(50);
     root -> left = new Node(30);
     root -> right = new Node(20);
