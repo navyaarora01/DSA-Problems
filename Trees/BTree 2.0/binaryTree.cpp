@@ -46,7 +46,6 @@ void levelOrderTriversal(node *root){
     }
   
 }
-
 void buildFromLevelOrder(node* &root) {
     queue<node*> q;
 
