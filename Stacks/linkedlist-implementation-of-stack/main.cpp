@@ -1,30 +1,37 @@
 #include <iostream>
 using namespace std;
-struct Node{
+struct Node
+{
     int data;
     Node *next;
-    Node(int x){
+    Node(int x)
+    {
         data = x;
         next = NULL;
     }
 };
 
-struct MyStack(){
+struct MyStack()
+{
     Node *head;
     int size;
-    MyStack(){
+    MyStack()
+    {
         head = NULL;
         size = 0;
-        
-        void push(int x){
+
+        void push(int x)
+        {
             Node *temp = new Node(x);
             temp->next = head;
             head = temp;
             size++;
         }
-        
-        int pop(){
-            if(head == NULL){
+
+        int pop()
+        {
+            if (head == NULL)
+            {
                 return INT_MAX;
             }
             int res = head->data;
@@ -33,17 +40,21 @@ struct MyStack(){
             size--;
             return res;
         }
-        
-        int Size(){
+
+        int Size()
+        {
             return size;
         }
-        
-        bool isEmpty(){
+
+        bool isEmpty()
+        {
             return (size == 0);
         }
-        
-        int peek(){
-            if(head==NULL){
+
+        int peek()
+        {
+            if (head == NULL)
+            {
                 return INT_MAX;
             }
             return (head->data);

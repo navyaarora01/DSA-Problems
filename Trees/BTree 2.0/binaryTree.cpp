@@ -64,7 +64,7 @@ void buildFromLevelOrder(node* &root) {
         int leftData;
         cin >> leftData;
 
-        if(leftData != -1) {
+    if(leftData != -1) {
             temp -> left = new node(leftData);
             q.push(temp->left);
         }
