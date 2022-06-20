@@ -19,6 +19,7 @@ Node *floor(Node *root , int x){
             root = root->left;
         }
         else{
+            
             res = root;
             root = root->right;
         }
