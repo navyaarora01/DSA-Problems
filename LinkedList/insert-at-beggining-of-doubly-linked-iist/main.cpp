@@ -35,7 +35,11 @@ int main(){
     temp2->prev = temp1;
      head =insertAtBegin(head , 40);
 
+
     printList(head);
     return 0;
 }
+
+
+
 
