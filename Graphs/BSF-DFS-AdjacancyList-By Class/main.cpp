@@ -78,8 +78,9 @@ void dfs(int v , Node graph[]){
         }
     }
 }
+
 int main(){
-    int v , v1 , j;
+    int v, v1 , j;
     cout<<"Enter number if vertices: ";
     cin>>v;
     Node graph[v];             //Array of vertices(list)
