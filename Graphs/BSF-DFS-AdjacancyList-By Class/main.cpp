@@ -37,6 +37,7 @@ void bfs(int v , Node graph[]){
     cout<<endl;
     q.push(startNode);
     while(!q.empty()){
+        
         if(visit[q.front()]==0){
             cout<<q.front()<<"-> ";
             visit[q.front()] = 1;
