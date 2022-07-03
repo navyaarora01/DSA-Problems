@@ -44,24 +44,24 @@ void DFS(vector<int> adj[], int V)
         }
     }
 }
-//****REcursive Approach***********
-// void DFSrec(vector<int> adj[] , int s , bool visited[]){
-//     visited[s] = true;
-//     cout<<s<<" ";
-//     for(int u : adj[s]){
-//         if(visited[u]==false){
-//             DFSrec(adj , u , visited);
-//         }
-//     }
-// }
-// void DFS(vector<int> adj[], int V)
-// {
-//     cout << "Enter the starting vertex for DFS: " << endl;
-//     int s;
-//     cin >> s;
-//     bool visited[V + 1] = {0};
-//     DFSrec(adj , s, visited);
-// }
+//           ****REcursive Approach***********
+/*void DFSrec(vector<int> adj[] , int s , bool visited[]){
+    visited[s] = true;
+    cout<<s<<" ";
+    for(int u : adj[s]){
+        if(visited[u]==false){
+            DFSrec(adj , u , visited);
+        }
+    }
+}
+void DFS(vector<int> adj[], int V)
+{
+    cout << "Enter the starting vertex for DFS: " << endl;
+    int s;
+    cin >> s;
+    bool visited[V + 1] = {0};
+    DFSrec(adj , s, visited);
+}  */
 int main()
 {
     int V, E;

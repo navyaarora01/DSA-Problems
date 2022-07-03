@@ -27,7 +27,7 @@ void addEdge(vector<int> adj[] , int u ,int v){
 //     }
 //     return false;
 // }
-// ************************************************************
+// *******************************************************
 bool DFS(vector<int> adj[] , int s , bool visited[] , int parent){
     visited[s] =true;
     for(int v :adj[s]){
@@ -42,12 +42,12 @@ bool DFS(vector<int> adj[] , int s , bool visited[] , int parent){
         
     }
     return false;
-}
+} 
 bool detectCycle(vector<int> adj[] , int V){
     bool visited[V]={0};
     for(int i=0;i<V;i++){
         if(visited[i]==false){
-            // if(BFS(adj,i,visited,V)){
+            // if(BFS(adj,i,v isited,V)){
             //     return true;
             // }
              if(DFS(adj,i,visited,V)){
