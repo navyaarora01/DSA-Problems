@@ -4,6 +4,7 @@
 using namespace std;
  int missingelem(int arr[] , int n){
      int xornum = 0;
+     
      for(int i=1;i<=n+1;i++){
          xornum = xornum^i;
      } 
