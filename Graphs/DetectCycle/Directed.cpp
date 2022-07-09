@@ -11,17 +11,18 @@ bool DFS(vector<int> adj[] , int s , bool visited[] , bool recSt[]){
             if(DFS(adj , v,visited , recSt)== true){
                 return true;
             }
-            else if(recSt[v]==true){
+           
+        } else if(recSt[v]==true){
                 return true;
             }
-        }
         
-    }recSt[s] = false;
+    }
+    recSt[s] = false;
         return false;
 }
 bool detectCycle(vector<int> adj[] , int V){
     bool visited[V]={0};
-    bool recSt[V]={0};                //recursion stack
+    bool recSt[V]={0};                //recursion stack 
     for(int i=0;i<V;i++){
         if(visited[i]==false){
              if(DFS(adj,i,visited,recSt)){

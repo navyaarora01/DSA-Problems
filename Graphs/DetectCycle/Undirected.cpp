@@ -17,10 +17,13 @@ void addEdge(vector<int> adj[] , int u ,int v){
 //         for(int v:adj[front]){
 //             if(visited[v] == 0){
 //                 visited[v] = 1;
-//                 parent[front] = v;
+//                 parent[v] = front;
 //                 q.push(v);
 //             }
-//             else if(v!=parent[front]){
+//             else if(v!=parent[front]){       // it means that v is visited but it is not 
+                                                //the parent of front node(becoz only parents
+                                                // have been vsisted by front node)so it is visited
+                                                // by some other node
 //                 return true;
 //             }
 //         }
