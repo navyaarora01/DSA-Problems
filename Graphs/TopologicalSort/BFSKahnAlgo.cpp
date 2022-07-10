@@ -6,12 +6,7 @@ void addEdge(vector<int> adj[] , int u ,int v,int indegree[]){
 }
 
 void BFStopsort(vector<int> adj[] ,int indegree[] ,int V){
-    queue<int> q;
-    for(int i=0;i<V;i++){
-        if(indegree[i]==0){
-            q.push(i);
-        }
-    }
+   
 /*  //  here we can create indegree array here 
     //instead of passing it to each edge fumction
 
@@ -23,6 +18,12 @@ void BFStopsort(vector<int> adj[] ,int indegree[] ,int V){
         }
     }
 */
+ queue<int> q;
+    for(int i=0;i<V;i++){
+        if(indegree[i]==0){
+            q.push(i);
+        }
+    }
     while(!q.empty()){
         int u = q.front();
         cout<<u<<" ";

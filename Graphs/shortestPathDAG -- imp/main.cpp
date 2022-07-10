@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define INF INT_MAX 
 using namespace std;
-void topsort(stack<int> s , vector<pair<int,int>> adj[] , int V ,int visited[], int u){
+void topsort(stack<int> s , vector<pair<int,int>> adj[] , int V ,int &visited[], int u){
     visited[u] = 1;
     for(auto x : adj[u]){
         if(visited[x.first]==0){
@@ -24,7 +24,7 @@ void shortestPath(vector<pair<int,int>> adj[] , int V){
     while(!st.empty()){
         int top = st.top();
         st.pop();
-         if(dist[top]!=INT_MAX){
+         if(dist[top]!=INT_MAX){       //this for the first node where we check that distance from source is 0
              for(auto v : adj[top]){
                  if(dist[v.first]>dist[top] + v.second){
                      dist[v.first]=dist[top] + v.second;
