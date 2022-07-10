@@ -22,12 +22,12 @@ int main(){
   
 
     for (int i = 0; i < N; i++) 
-        key[i] = INT_MAX, mstSet[i] = false; 
+        key[i] = INT_MAX, mstSet[i] = false,parent[i] = -1; 
   
 
     key[0] = 0; 
     parent[0] = -1; 
-    int ansWeight = 0;
+    // int ansWeight = 0;
     for (int count = 0; count < N - 1; count++)
     { 
         
@@ -53,3 +53,5 @@ int main(){
         cout << parent[i] << " - " << i <<" \n"; 
 	return 0;
 }
+
+//tc = O(N^2)
