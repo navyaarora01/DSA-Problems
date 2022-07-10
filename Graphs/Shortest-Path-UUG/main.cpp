@@ -6,8 +6,7 @@ using namespace std;
 
 void BFS(vector<int> adj[], int N, int src) 
 { 
-	int dist[N];
-	for(int i = 0;i<N;i++) dist[i] = INT16_MAX; 
+	int dist[N]={INT16_MAX};
 	queue<int>  q;
 	
 	dist[src] = 0;
@@ -40,3 +39,5 @@ int main(){
     }
     BFS(adj , n , 0);
 }
+//tc = O(V+E)
+//sc = o(n) + O(n)
