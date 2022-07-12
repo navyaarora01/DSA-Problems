@@ -5,7 +5,7 @@ int main(){
 	int N,m;
     cout<<"hi";
 	cin >> N >> m;
-	vector<pair<int,int> > adj[N]; 
+	vector<pair<int,int>> adj[N]; 
 
 	int a,b,wt;
 	for(int i = 0; i<m ; i++){
