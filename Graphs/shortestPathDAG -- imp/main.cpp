@@ -6,7 +6,7 @@ void topsort(stack<int> s , vector<pair<int,int>> adj[] , int V ,int &visited[],
     for(auto x : adj[u]){
         if(visited[x.first]==0){
             topsort(s , adj , V , visited , x.first);
-        }
+        }j
     }
     s.push(u);
 }
