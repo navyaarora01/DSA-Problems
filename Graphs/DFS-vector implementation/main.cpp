@@ -14,6 +14,7 @@ void printGraph(vector<int> adj[], int V)
     {
         for (int x : adj[i])
         {
+            
             cout << x << " ";
         }
         cout << "\n";
