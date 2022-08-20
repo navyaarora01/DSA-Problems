@@ -45,8 +45,9 @@ int main()
 cin>> n;
 int arr[n];
 for(int i=0;i<n;i++){
-    cin>>arr[i];
+    cin>>arr[i] ;
 }
+
 oddoccuring(arr, n);
 // cout<<oddoccuring(arr, n)<<endl;
 }
