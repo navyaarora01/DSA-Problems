@@ -10,7 +10,9 @@ struct stack{
         return q1.size();
     }
     int pop(){
-        return q1.front();
+        int val = q1.front();
+        q1.pop();
+        return val;
     }
     void push(int x){
         while(q1.empty()==false){

@@ -32,4 +32,4 @@ int main()
 }
 
 // time complexity = O(n);
-// space complexity = O(h);          where his the longest height of the tree
+// space complexity = O(h);          where h is the longest height of the tree

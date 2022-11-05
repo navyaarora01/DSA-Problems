@@ -36,6 +36,7 @@ struct MyStack()
             }
             int res = head->data;
             Node *temp = head;
+            head = head->next;
             delete temp;
             size--;
             return res;

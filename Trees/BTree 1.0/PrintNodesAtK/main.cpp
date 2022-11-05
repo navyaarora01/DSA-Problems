@@ -17,8 +17,9 @@ void nodeAtK(Node *root , int k){
         cout<<(root->key)<<" ";
     }
     else{
-        nodeAtK(root->right ,k-1) ;
+       
         nodeAtK(root->left , k-1);
+         nodeAtK(root->right ,k-1) ;
     }
 }
 int main()

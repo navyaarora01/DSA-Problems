@@ -13,7 +13,7 @@ void reversingQueue(queue<int> &q){
         q.push(s.top());
         s.pop();
     }
-    while(q.empty()==false){
+    while(!q.empty()){
       cout<<q.front()<<endl;;
         q.pop();
     }
