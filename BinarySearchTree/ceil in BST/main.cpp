@@ -9,7 +9,7 @@ struct Node{
         left = right = NULL;
     }
 };
-Node *floor(Node *root , int x){
+Node *ceil(Node *root , int x){
     Node *res = NULL;
     while(root!=NULL){
         if(root->key==x){
@@ -35,7 +35,7 @@ int main()
     root -> right -> left = new Node(70);   
     root -> right -> left->left = new Node(55);   
     root -> right -> right = new Node(100); 
-    Node *ans  = floor(root , 90);
+    Node *ans  = ceil(root , 90);
     cout<<ans<<" "<<ans->key<<endl;
     return 0;
 }

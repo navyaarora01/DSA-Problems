@@ -3,7 +3,6 @@ Insert an element from unsorted array to its correct position in sorted array
 Bassically we will create a new empty array and one by one we will shift the 
 element from previous array to the new sorted array and the previous array will
 be decreased and the new array will be increased
-
 *******************************************************************************/
 #include <iostream>
 #include <stdio.h>
