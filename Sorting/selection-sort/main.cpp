@@ -19,7 +19,7 @@ int main()
             if (array[j] < array[min_index])
             {
                 // int temp = array[j];
-                // array[j] = array[i];
+                // array[j] = array[i];  gsutil cp gs://qwiklabs-gcp-02-b920438484df/*.svg .
                 // array[i] = temp;
                 min_index = j;
             }
